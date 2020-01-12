@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galaxy</title>
+    <link rel="stylesheet" href="css/tawasl.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <section class="main-home" ondblclick="myHome()">
+        <div id="home" class="home">
+            <header id="header">
+                <div class="left">
+                    <i class="fas fa-stream" id="close-open-aside"></i>
+                    <h1 id="h1">Home</h1>
+                </div>
+                <div class="right" style="border-bottom: none">
+                    <input type="search" value="" class="search-input" id="search" placeholder="Search.." name="">
+                    <i class="fas fa-search" id="search-icon"></i>
+                </div>
+            </header>
+            <div id="home-dates">
+                <h1>Galaxy Home</h1>
+                <span class="weather"><i class=""></i></span>
+                <div class="date">
+                    <div id="day"></div>
+                    <div id="time"></div>
+                </div>
+            </div>
+            <div class="plus-icon" id="plus-icon">
+                <i class="far fa-user" id="icon-click-profile"></i>
+                <i class="fas fa-edit" id="icon-click-compose"></i>
+                <i class="far fa-comments" id="myIconClickToHome"></i>
+                <i class="fas fa-clock"></i>
+            </div>
+            <i class="fas fa-times" id="times"></i>
+            <i class="fas fa-plus" id="plus"></i>
+        </div>
+        <section id="side-Nav" class="aside">
+            <div class="container">
+                <div class="sidenav">
+                    <h1>Amir Diafi</h1>
+                    <p>amirdiafi@mail.com</p>
+                    <details>
+                        <summary></summary>
+                        <a href="">Saved</a>
+                        <a href="">Close Friends</a>
+                        <a href="">Find People</a>
+                        <a href="">Add Acount <i class="fas fa-plus"></i></a>
+                    </details>
+                </div>
+                <ul>
+                    <li id="backHome"><i class="fas fa-home"></i>Home</li>
+                    <li><i class="far fa-list-alt"></i>Alarm</li>
+                    <li id="side-click-compose"><i class="fas fa-edit"></i>Compose</li>
+                    <li id="mySideClickToHome"><i class="far fa-comments"></i>Chat</li>
+                    <li id="side-click-profile"><i class="far fa-user"></i>Profile</li>
+                    <li id="active-notfs" onclick="activeNotifications()"><i class="far fa-bell"></i>Act Notifs</li>
+                    <li id="disactive-notfs" onclick="disNotifications()" style="display: none"><i class="far fa-bell-slash"></i>Dis Notfs</li>
+                    <li><i class="fas fa-info-circle"></i>Credits</li>
+                    <li><i class="fas fa-sign-out-alt"></i>Sign Out</li>
+                </ul>
+            </div>
+        </section>
+        <section class="profile" id="profile">
+            <i class="fas fa-arrow-circle-left" id="close-profile"></i>
+            <div class="container">
+                <img src="imgs/me.jpg" alt="">
+                <ul>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus-g"></i></li>
+                    <li><i class="fab fa-codepen"></i></li>
+                    <li><i class="fab fa-connectdevelop"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-pinterest"></i></li>
+                </ul>
+            </div>
+            <header class="info">
+                <span>Amir Diafi</span>
+                <span>Web/Graphic Designer</span>
+            </header>
+            <article>
+                Hi, It's me Amir from Algeria. I'm a web and graphic designer. Designing is my passion and i am still learning and developing my skills on graphics, designing and coding. I have been working on various designing projects.
+            </article>
+            <ul class="icons">
+                <li><i class="fab fa-codepen"></i></li>
+                <li><i class="fab fa-connectdevelop"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+                <li><i class="fab fa-pinterest"></i></li>
+            </ul>
+        </section>
+        <section class="compose" id="compose">
+            <div class="task-det">
+                <div class="time">
+                    <i class="fas fa-clock"></i><span>Time</span>
+                    <input type="time">
+                </div>
+                <div class="date">
+                    <i class="fas fa-calendar-alt"></i><span>Date</span>
+                    <input type="date">
+                </div>
+                <div class="title">
+                    <i class="fas fa-edit"></i><span>Title</span>
+                    <input type="text">
+                </div>
+                <div class="task">
+                    <i class="fas fa-clipboard-list"></i><span>Task</span><br>
+                    <textarea name="" id="" cols="" rows=""></textarea>
+                </div>
+                <input type="button" value="Compose">
+            </div>
+        </section>
+
+        <section id="chats" class="chats">
+            <h3 id="UsersH1" onclick="myUsers()" onmousewheel="myUsersTwo()">Users</h3>
+            <h3 id="MessagesH1" onclick="myMessages()">Messages</h3>
+            <h3 id="GroupsH1" onclick="myGroups()">Groups</h3>
+            <div class="users" style="display: block" id="users">
+                <ul>
+                    <li>
+                        <span class="left"><img src="imgs/user1.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Jens Brehmen</span>
+                                <span class="span02">Web &amp; UI Designer</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><a href="#"><img src="imgs/user2.jpg" alt="me"></a>
+                            <span class="theInfo">
+                                <span class="span01">Coding Blonde</span>
+                                <span class="span02">Front-End Developer</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user3.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">DHanish Gajjar</span>
+                                <span class="span02">Co-Founder</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user4.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Code Dad</span>
+                                <span class="span02">Sales Manager</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user5.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Brandy Morgan</span>
+                                <span class="span02">App Develpoer</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user6.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">AraltaSher</span>
+                                <span class="span02">Project Manager</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="messages" id="messages" style="display: none">
+                <ul>
+                    <li>
+                        <span class="left"><img src="imgs/user3.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">DHanish Gajjar</span>
+                                <span class="span02">Hello Amir, Whre R U</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><a href="#"><img src="imgs/user4.jpg" alt="me"></a>
+                            <span class="theInfo">
+                                <span class="span01">Jens Brehmen</span>
+                                <span class="span02">Ok I'm coming</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user2.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">AraltaSher</span>
+                                <span class="span02">Hi There he r u ?</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user6.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Brandy Morgan</span>
+                                <span class="span02">Yeah, It's cool</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user5.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Code Dad</span>
+                                <span class="span02">I know that</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/user1.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Coding Blonde</span>
+                                <span class="span02">I'm in paris</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="groups" id="groups" style="display: none">
+                <ul>
+                    <li>
+                        <span class="left"><img src="imgs/grp1.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">JasvaScript</span>
+                                <span class="span02">Books &amp; Layout</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><a href="#"><img src="imgs/grp2.jpg" alt="me"></a>
+                            <span class="theInfo">
+                                <span class="span01">HTML CSS</span>
+                                <span class="span02">Books &amp; Designing</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/grp3.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Java</span>
+                                <span class="span02">Ideas &amp; Tricks</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/grp4.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Fitness</span>
+                                <span class="span02">Workout &amp; Health</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/grp55.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Entrepreneur</span>
+                                <span class="span02">Adivces &amp; tricks</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                    <li>
+                        <span class="left"><img src="imgs/grp6.jpg" alt="me">
+                            <span class="theInfo">
+                                <span class="span01">Designers</span>
+                                <span class="span02">UI &amp; UX Designer</span>
+                            </span>
+                        </span>
+                        <span class="right"><i class="fas fa-circle"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </section>
+    <script src="js/tawasl.js"></script>
+</body>
+
+</html>
